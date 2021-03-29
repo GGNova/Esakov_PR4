@@ -1,0 +1,106 @@
+body
+  margin: 0
+  padding: 0
+
+.main
+  display: flex
+  flex-direction: column
+  max-width: 1220px
+
+=iconStyle
+  background-repeat: no-repeat
+
+@font-face
+  font-family: "Roboto-Regular"
+  src: url(../Fonts/Roboto-Regular.ttf)
+
+@font-face
+  font-family: "SF Pro-regular"
+  src: url(../Fonts/SourceSansPro-Regular.ttf)
+
+@font-face
+  font-family: "Roboto-Bold"
+  src: url(../Fonts/Roboto-Bold.ttf)
+
+=SF-regular
+  font-family: "SF Pro-regular"
+
+=Roboto-regular
+  font-family: "Roboto-Regular"
+
+=Roboto-Bold
+  font-family: "Roboto-Bold"
+
+.header
+  max-width: 1120px
+  margin: auto
+  display: flex
+  justify-content: space-between
+  margin-top: 50px
+  &-btnLog
+    margin-left: 85px
+    width: 97px
+    height: 40px
+    background-color: #1890FF
+    color: white
+    background-image: url(../icons/hooman.svg)
+    +iconStyle
+    background-position-y: 12px
+    background-position-x: 16px
+    border: none
+    outline: none
+    cursor: pointer
+    +SF-regular
+  &-btnCart
+    width: 97px
+    height: 40px
+    background-color: transparent
+    margin-left: 10px
+    border: 1px solid #D9D9D9
+    outline: none
+    cursor: pointer
+    +iconStyle
+    background-image: url(../icons/shop-cart.svg)
+    background-position-y: 12px
+    background-position-x: 7px
+    +SF-regular
+    
+
+.logo
+  background-image: url(../icons/logo.svg)
+  width: 100px
+  height: 36px
+  display: flex
+  align-items: center
+  +iconStyle
+  p
+    margin-left: 40px
+    +Roboto-regular
+
+.header-search
+  border: 1px solid #D9D9D9
+  width: 550px
+  height: 40px
+  background-image: url(../icons/searchHome.svg)
+  background-repeat: no-repeat
+  background-position-y: center
+  background-position-x: 10px
+  display: flex
+  align-items: center
+  margin-left: 100px
+  padding-left: 30px
+  &::placeholder
+    color: #BFBFBF
+    +Roboto-regular
+
+.content
+  padding-top: 20px
+  max-width: 1120px
+  margin: auto
+  &-headline
+    display: flex
+    align-items: center
+    h2
+      +Roboto-Bold
+      margin-right: 20px
+      
