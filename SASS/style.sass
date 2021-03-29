@@ -64,7 +64,7 @@ body
     background-position-y: 12px
     background-position-x: 7px
     +SF-regular
-    
+    color: #595959
 
 .logo
   background-image: url(../icons/logo.svg)
@@ -93,6 +93,13 @@ body
     color: #BFBFBF
     +Roboto-regular
 
+.dot
+  background-color: #8C8C8C
+  display: block
+  width: 5px
+  height: 5px
+  border-radius: 25px
+
 .content
   padding-top: 20px
   max-width: 1120px
@@ -100,7 +107,37 @@ body
   &-headline
     display: flex
     align-items: center
+    margin-left: -518px
     h2
       +Roboto-Bold
-      margin-right: 20px
-      
+      margin-right: 25px
+    &-rating
+      width: 50px
+      color: #FFC107
+      +Roboto-Bold
+      margin-left: 5px
+    &-discription
+      color: #8C8C8C
+      +Roboto-regular
+    .dot
+      margin-left: 10px
+      margin-right: 10px
+
+.star
+  +iconStyle
+  background-image: url(../icons/star.svg)
+  background-position-y: center
+  width: 14px
+  height: 14px
+
+.content-cards
+  display: flex
+  flex-wrap: wrap
+
+.card
+  display: flex
+  flex-direction: column
+  +iconStyle
+  background-image: url(../img/eel-default.png)
+  width: 380px
+  height: 210px

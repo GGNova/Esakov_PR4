@@ -70,6 +70,7 @@ body {
   background-position-y: 12px;
   background-position-x: 7px;
   font-family: "SF Pro-regular";
+  color: #595959;
 }
 
 .logo {
@@ -128,6 +129,14 @@ body {
   font-family: "Roboto-Regular";
 }
 
+.dot {
+  background-color: #8C8C8C;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 25px;
+}
+
 .content {
   padding-top: 20px;
   max-width: 1120px;
@@ -141,10 +150,58 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: -518px;
 }
 
 .content-headline h2 {
   font-family: "Roboto-Bold";
-  margin-right: 20px;
+  margin-right: 25px;
+}
+
+.content-headline-rating {
+  width: 50px;
+  color: #FFC107;
+  font-family: "Roboto-Bold";
+  margin-left: 5px;
+}
+
+.content-headline-discription {
+  color: #8C8C8C;
+  font-family: "Roboto-Regular";
+}
+
+.content-headline .dot {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.star {
+  background-repeat: no-repeat;
+  background-image: url(../icons/star.svg);
+  background-position-y: center;
+  width: 14px;
+  height: 14px;
+}
+
+.content-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-repeat: no-repeat;
+  background-image: url(../img/eel-default.png);
+  width: 380px;
+  height: 210px;
 }
 /*# sourceMappingURL=style.css.map */
