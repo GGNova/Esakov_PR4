@@ -6,6 +6,8 @@ body
   display: flex
   flex-direction: column
   max-width: 1220px
+  margin: 0px
+  padding: 0px
 
 =iconStyle
   background-repeat: no-repeat
@@ -181,8 +183,8 @@ body
     border-radius: 2px
     +btnStyle
     margin-left: 25px
-  &:nth-last-child(-n+3)
-    margin-top: 40px
+  // &:nth-last-child(-n+3)
+  //   margin-top: 40px
   &-price
     +Roboto-Bold
     margin-left: 40px
@@ -368,3 +370,98 @@ body
   height: 100%
   position: fixed
 
+@media all and(max-width: 1920px)
+  .main
+    display: flex
+    flex-direction: column
+    max-width: 1920px
+    margin: 0px
+    padding: 0px
+
+  .header
+    max-width: 1680px
+    margin: auto
+    display: flex
+    justify-content: space-between
+    margin-top: 50px
+
+@media all and(max-width: 2580px)
+  .main
+    display: flex
+    flex-direction: column
+    max-width: 2580px
+    margin: 0px
+    padding: 0px
+  
+  .header
+    max-width: 2340px
+    margin: auto
+    display: flex
+    justify-content: space-between
+    margin-top: 50px
+
+@media all and(max-width: 1049px)
+  .main
+    display: flex
+    flex-direction: column
+    max-width: 1049px
+    margin: 0px
+    padding: 0px
+  .header
+    max-width: 809px
+    margin: auto
+    display: flex
+    justify-content: space-between
+    margin-top: 50px
+    &-btnLog
+      margin-left: 85px
+      width: 97px
+      height: 40px
+      background-color: #1890FF
+      color: white
+      background-image: url(../icons/hooman.svg)
+      +iconStyle
+      background-position-y: 12px
+      background-position-x: 6px
+      border: none
+      font-size: 10px
+      +btnStyle
+      +SF-regular
+    &-btnCart
+      width: 97px
+      height: 40px
+      background-color: transparent
+      margin-left: 10px
+      border: 1px solid #D9D9D9
+      +btnStyle
+      +iconStyle
+      background-image: url(../icons/shop-cart.svg)
+      background-position-y: 12px
+      background-position-x: 1px
+      font-size: 10px
+      +SF-regular
+      color: #595959
+  .content
+    padding-top: 20px
+    max-width: 809px
+    margin: auto
+    display: flex
+    flex-direction: column
+    &-headline
+      display: flex
+      align-items: center
+      argin-left: 40px
+      h2
+        +Roboto-Bold
+        margin-left: -35px
+      &-rating
+        width: 50px
+        color: #FFC107
+        +Roboto-Bold
+        margin-left: 5px
+      &-discription
+        color: #8C8C8C
+        +Roboto-regular
+      .dot
+        margin-left: 10px
+        margin-right: 10px
